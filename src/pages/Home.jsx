@@ -5,7 +5,7 @@ import Artworks from "../components/Artworks"
 const Home = ({ theme, setTheme, setLight, light }) => {
   const [loading, setLoading] = useState(false)
   const [artworks, setArtworks] = useState("")
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(20)
 
   const fetchArts = async () => {
     setLoading(true)

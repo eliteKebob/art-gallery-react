@@ -1,9 +1,9 @@
 const Pagination = ({ page, setPage }) => {
   const handleClick = () => {
-    if (page < 1) {
-      setPage(1)
+    if (page < 20) {
+      setPage(20)
     }
-    if (page === 1 || page > 1) {
+    if (page === 20 || page > 20) {
       setPage(page + 1)
     }
   }
