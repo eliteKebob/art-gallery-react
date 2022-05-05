@@ -17,7 +17,6 @@ const Home = ({ theme, setTheme, setLight, light }) => {
       const response = await axios(config)
       if (response.data) {
         setArtworks(response.data)
-        console.log(response.data)
         setLoading(false)
       }
     } catch (error) {
